@@ -16,13 +16,13 @@
 	<div class="main-content">
     	<div class="row">
 			<h1>Closing stocks for previous week</h1>
-			<form id="stock-form" th:action="@{/stocks}" method="POST">
+			<form id="stockForm" th:action="@{/stocks}" method="POST">
 				<div class="form-group">
                   <label class="col-sm-3 control-label">Company Name </label>
                   <div class="col-sm-6">
                     <input type="text" id="company" name="company" class="form-control" />
                   </div>
-                  <button id="stock-button" type="submit" class="col-sm-3">Fetch Stock</button>
+                  <button id="stockButton" type="submit" class="col-sm-3">Fetch Stock</button>
                 </div>
                 <div th:include="tables/stock :: stock-list"></div>
 			</form>

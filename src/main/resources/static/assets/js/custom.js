@@ -1,8 +1,8 @@
 var company;
 
-var $stockForm = $('#stock-form');
+var $stockForm = $('#stockForm');
 var $stockFormAjaxProcessor = function(e) {
-	  e.preventDefault();	  
+	  e.preventDefault();  
 	  $.ajax({
 	    url: $stockForm.attr('action'),
 	    method: 'POST',
@@ -11,8 +11,6 @@ var $stockFormAjaxProcessor = function(e) {
 	    	var $responseData = $(response);
 	    	var $tableDiv = $('#stock-table-row');
 	    	$tableDiv.replaceWith($responseData);
-	    	alert(1111);
-	    	console.log($responseData);
 	    	localStorage.setItem("last-company", $('#company').val());
 	      }
 	    });	  
@@ -27,6 +25,7 @@ $(document).ready(function() {
     
     if (company != null && company.trim() != "") {
     	$('#company').val(company);
+    	$('#stockButton').click();
     }
 } );
 
