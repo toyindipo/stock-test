@@ -1,0 +1,22 @@
+{
+  "dataset_data":
+
+  {
+    "limit": null,
+    "transform": null,
+    "column_index": 4,
+    "column_names": ["Date", "Close"],
+    "start_date": "2016-04-18",
+    "end_date": "2016-04-22",
+    "frequency": "daily",
+    "data": [
+      ["2016-04-22", 105.68],
+      ["2016-04-21", 105.97],
+      ["2016-04-20", 107.13],
+      ["2016-04-19", 106.91],
+      ["2016-04-18", 107.48]
+    ],
+    "collapse": null,
+    "order": "desc"
+  }
+}
